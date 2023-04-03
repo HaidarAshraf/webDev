@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*css for nav bars on top of page */
+nav {
+    background-color: darkgrey;
+    height:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+  
+nav ul li {
+    display: inline;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+/* end of css for nav bar */
+
+/*css for web page */
+body{
+    background-color: darkgrey;
+    font-family: sans-serif;
+    background:darkgrey;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+/*well done image */
+img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+ /* css for timer box on top left of page*/
+.timer-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: lavender;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px darkgrey;
+    font-size: 24px;
+  }
+  
+  .timer-box span {
+    font-weight: bold;
+  }
+  
+.img{
+    position: fixed;
+}
+
+/* css for subtitle*/
+#subtitle{ 
+    padding: 0.8rem 0;
+    font-size: 3rem;
+    color: black;
+    display: block;
+    position:relative;
+    top:auto;
+    text-align: center;
+    
+}
+/* css for questions*/
+.questions{
+    margin: 3rem auto;
+    width: 90vw;
+    padding: 2rem;
+    background: grey;
+    cursor: default;
+    border-radius: 1rem;
+}
+#question{
+    margin-bottom: 1rem;
+}
+
+/*css for the 4 options on screen */
+.option{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    border-bottom: solid 0.1rem light;
+    width: 15rem;
+    background: lavender;
+    border-radius: 1rem;
+}
+
+/*css for when you hover over the options it chnages from black to purple */
+.option:hover{
+    color: rgb(121, 27, 209);
+}
+/* css for inside ol*/
+ol{
+    position: relative;
+    padding: 0 1.5rem;
+    color: black;
+}
+span{
+    display: block;
+    padding: 0.1rem 0.7rem;
+    border-radius: 1rem;
+}
+#answer{
+    margin-top: 2.5rem;
+}
+#stats{
+    margin-top: 1.5rem;
+    color: black;
+}
+
+/* css for nexbuttons */
+.buttons{
+    text-align: center;
+}
+button{
+    padding: 0.2rem 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    color: rgba(20, 16, 27, 0.98);
+    background: lavender;
+}
+button:active{
+    background: lavender;
+}
+/* css for scoreboard and bank */
+#scoreboard,#answerBank{
+    width: 20rem;
+    background: grey;
+    padding: 2rem;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 5rem;
+    display: none;
+}
+#score-title{
+    margin: 1rem 0;
+}
+#score-btn,#check-answer{
+    margin-top: 1rem;
+}
+#score{
+    font-size: 2.5rem;
+}
+#answerBank li{
+    text-align: left;
+    margin-bottom: 0.2rem;
+    font-size: larger;
+}
+#answers{
+    margin-top: 1rem;
+}

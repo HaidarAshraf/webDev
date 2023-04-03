@@ -1,0 +1,75 @@
+<!--comments-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Quiz</title>
+    <link rel="icon" type="image/x-icon" href="game-controller.png">
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<body>
+    <!--Nav bar for Group on top of every page with css in css file-->
+<nav>
+    <ul>
+        <ul>
+            <li><a href="https://w1909500.users.ecs.westminster.ac.uk/webDev/splash.html">Presentation</a></li>
+            <li><a href="https://w1909755.users.ecs.westminster.ac.uk/webDev/Home.html">Home</a></li>
+            <li><a href="https://w1909755.users.ecs.westminster.ac.uk/webDev/Form.html">Comments</a></li>
+            <li><a href="https://w1909500.users.ecs.westminster.ac.uk/webDev/buy.html">Buy Products</a></li>
+            <li><a href="https://w1827690.users.ecs.westminster.ac.uk/WebDev/sitemap.html">Diagram</a></li>
+            <li><a href="https://w1905362.users.ecs.westminster.ac.uk/webDev/Quiz.html">Quiz</a></li>
+            <li><a href="https://w1827690.users.ecs.westminster.ac.uk/WebDev/thumbnails.html">Thumbnail Images</a></li>
+            <li><a href="https://w1905362.users.ecs.westminster.ac.uk/webDev/StudentDetails.html">About Us</a></li>
+        </ul>
+    </ul>
+</nav>
+    <!--Timer Section inside a timer-box for easy css -->
+    <div class="timer-box"><div id="timer">2:00</div></div>
+
+    <!--subtitle in webpage -->
+    <h1 id="subtitle">Game Quiz</h1> 
+
+    <!-- Questions inside a container or division called quizcontainer to make it look better css is in css file  -->
+    <div id="quiz-container"> <!--id is for css and js -->
+        <div class="questions"> <!--class is for css and js -->
+            <h2 id="question"></h2> <!--id is for css and js -->
+            <ol type="A">
+                <li class="option"><span id="option0" onclick="calcScore(this)"></span></li> <!--on click records a click on the quiz-->
+                <li class="option"><span id="option1" onclick="calcScore(this)"></span></li> <!--same as above-->
+                <li class="option"><span id="option2" onclick="calcScore(this)"></span></li> <!--same as above-->
+                <li class="option"><span id="option3" onclick="calcScore(this)"></span></li> <!--same as above-->
+            </ol>
+            <h4 id="stats"></h4> <!--for user to see what question they are on and how many left -->
+        </div>
+        <!--seperate container for next button classed for use in css and java-->
+        <div class="buttons">
+            <button type="button" class="next">Next</button>
+        </div>
+    </div>
+
+    <!--container or division for scoreboard which apears after the quiz ends-->
+    <div id="scoreboard">
+        <img src="completed.jpg" alt=""> <!--image saying completed at the end of the quiz-->
+        <h2 id="message"></h2> <!--message for user depending on how they did in quiz id is used in js-->
+        <h2 id="score-title">Your Score</h2>  <!--prints your score under the image-->
+        <h2 id="score"></h2> <!--how much they scored out of 10-->
+        <button type="button" id="score-btn" onclick="backToQuiz()">Restart</button> <!--restart the quiz button for user to restart the quiz -->
+    </div>
+
+    <!-- answers section -->
+    <div id="answerBank">
+        <h2>Answers :</h2>
+        <ol type="1" id="answers">
+
+        </ol>
+        <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
+    </div>
+
+    <!-- link to javascript -->
+    <script src="Quiz.js"></script>
+</body>
+</html>

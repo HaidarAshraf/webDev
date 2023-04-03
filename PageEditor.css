@@ -1,0 +1,75 @@
+/*css for background of webpage */
+body{
+    background-color: darkgrey;
+    font-family: sans-serif;
+    background:darkgrey;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+/*css for nav bars on top of page */
+nav {
+    background-color: darkgrey;
+    height:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+  
+nav ul li {
+        display: inline;
+		padding-right: 10px;
+		padding-left: 10px;
+}
+/*css for subtitle */ 
+#subtitle{ 
+    position:relative;
+    top: 80px;
+    width: auto;
+    font-size: 2em; 
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    border: solid 2px black; 
+    color: black;
+    background-color: grey;
+}
+/*css for second div which contains my name role and a message  */
+#info{
+    display: block;
+    position:relative;
+    top:90px;
+    width: auto;
+    font-size: 1em; 
+    justify-content: center;
+	text-align: center;
+    border: solid 2px black; 
+    color: black;
+    background-color: grey;
+}
+/* css for main part which contains more links and what i did*/
+#mainp{
+    display: block;
+    position:relative;
+    top:100px;
+    width: auto;
+    font-size: 1em; 
+    justify-content: center;
+	text-align: center;
+    border: solid 2px black; 
+    color: black;
+    background-color: grey;
+}
